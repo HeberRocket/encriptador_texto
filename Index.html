@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Estilachos.css">
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/Logo.png"></h1>
+            <p class="Titulo">Encriptador de texto</p>
+
+        </div>
+
+    </header>
+
+    <main>
+        <!--  <ol class="encriptado"> -->
+        <section class="encriptado">
+            <h2>Texto recibido</h2>
+            <!-- cols=auto rows=auto -->
+            <textarea class="textarea" name="area" id="valorUsuario" 
+                placeholder="Ingrese su texto aqui..."></textarea>
+            <p>No se aceptan mayusculas ni caracteres especiales</p>
+            <br>
+    
+            <button class="boton1" onclick="encriptar();" class="container__boton">Encriptar</button>
+    
+            <button class="boton2" onclick="desencriptar();" class="container__boton">Desencriptar</button>
+    
+        </section>
+        <section class="encriptado">
+            <h2>Resultado</h2>
+    
+            <textarea class="textarea" name="areaResultado" id="valorResultado" 
+                placeholder="Ningun mensaje fue encontrado"></textarea>
+    
+    
+    
+            <button class="boton3" onclick="copiarTexto()">Copiar texto</button>
+    
+        </section>
+    
+    
+    
+    
+    
+    </main>
+
+
+
+    <footer class="pie">
+
+        <p class="cr">Brigham Heber Acevedo Martinez Marzo-2024</p>
+    </footer>
+    <script src="archivojs.js"></script>
+</body>
+
+</html>

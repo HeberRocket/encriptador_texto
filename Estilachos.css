@@ -1,0 +1,257 @@
+body {
+    font-family: 'Montserrat, sans-serif';
+}
+
+header {
+    background-color: #090909;
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+
+}
+
+.Titulo {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    text-transform: uppercase;
+    color: #fbfcfd;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+main {
+    display: flex; /* Utilizamos Flexbox para alinear horizontalmente las secciones */
+    justify-content: space-between; /* Distribuimos las secciones horizontalmente */
+}
+
+
+
+
+/*.encriptado textarea{
+    
+    width: 940px;
+    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 50px;
+    justify-content: space-between center;
+    text-align: center;
+
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}*/
+
+.encriptado{
+   
+    padding: 50px;
+    justify-content: space-between center;
+    
+}
+
+/*textarea*/
+.textarea {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 600px; /* Ocupa todo el ancho disponible */
+    height: 400px;
+
+}
+.textarea:hover{
+    border-color: #053f94;
+   
+}
+.textarea:active{
+    border-color: #df1039;
+}
+
+
+
+
+.encriptado h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.boton1 {
+    background-color: #071990;
+    /* Color de fondo */
+    border: none;
+    /* Sin borde */
+    color: white;
+    /* Color del texto */
+    padding: 10px 60px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar como bloque */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cursor al pasar sobre él */
+    border-radius: 20px;
+    /* Borde redondeado */
+}
+
+.boton2 {
+    background-color: #7f80821f;
+    /* Color de fondo */
+    border: 2px solid #000000;
+    /* Sin borde */
+    color: rgb(11, 10, 10);
+    /* Color del texto */
+    padding: 10px 60px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar como bloque */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cursor al pasar sobre él */
+    border-radius: 20px;
+    /* Borde redondeado */
+
+}
+
+.boton3 {
+    background-color: #f4f5f8eb;
+    /* Color de fondo */
+    border: 2px solid #000000;
+    /* Sin borde */
+    color: rgb(11, 10, 10);
+    /* Color del texto */
+    padding: 10px 60px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar como bloque */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cursor al pasar sobre él */
+    border-radius: 20px;
+    /* Borde redondeado */
+
+}
+
+
+
+footer {
+    text-align: center;
+    background: url(imagenes/fondo_good.jpg);
+    padding: 50px;
+    
+   
+}
+
+.cr {
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+
+@media screen and (max-width:412px) {
+
+    h1{
+        text-align: center;
+    }
+    .Titulo{
+        position: static;
+    }
+
+    .caja{
+        width: auto;/*auto*/
+        flex-basis: 100%;
+
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */   
+
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+    .textarea {
+        border: 2px solid #000000;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 250px; 
+        height: 150px;
+    
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    
+
+    .caja{
+        width: auto;
+        flex-basis: 100%;
+
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */   
+
+    }
+
+    
+    .textarea {
+        border: 2px solid #000000;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 300px; 
+        height: 200px;
+    
+    }
+    
+}
